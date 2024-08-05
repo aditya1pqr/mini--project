@@ -1,10 +1,11 @@
 import React from 'react'
+import style from "./Inputs.module.css"
 
 function Inputs() {
   return (
-    <div>
-      input
-    </div>
+    
+      <input type="text" className={style.foodInput}/>
+    
   )
 }
 

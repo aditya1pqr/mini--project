@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Heading() {
+function ErrorMessage() {
   return (
     <div>
-      Heading
+      
     </div>
   )
 }
 
-export default Heading
+export default ErrorMessage
