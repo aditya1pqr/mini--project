@@ -15,7 +15,7 @@ function Fooditems({foodItmes}) {
   return (
   
     <div>
-      { foodItmes.map((items)=>(<Items bought={activeItems.includes(items)} handlechange={(event)=> onBuyButton(items,event)} items={items}></Items>)
+      { foodItmes.map((items)=>(<Items key={items} bought={activeItems.includes(items)} handlechange={(event)=> onBuyButton(items,event)} items={items}></Items>)
         
       )}
       
