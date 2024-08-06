@@ -1,10 +1,15 @@
 import React from 'react'
 import Items from './Items'
 
-function Fooditems() {
+function Fooditems({foodItmes}) {
+ 
   return (
+   
     <div>
-      <Items></Items>
+      { foodItmes.map((items)=>(<Items items={items}></Items>)
+        
+      )}
+      
     </div>
   )
 }

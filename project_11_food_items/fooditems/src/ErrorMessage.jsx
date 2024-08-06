@@ -1,10 +1,12 @@
 import React from 'react'
+import styles from "./ErrorMessage.module.css"
 
-function ErrorMessage() {
+function ErrorMessage({foodItmes}) {
   return (
-    <div>
+    <>
+    {foodItmes.length === 0 && <h1 className={styles.error}>List is Empty</h1>}
       
-    </div>
+    </>
   )
 }
 

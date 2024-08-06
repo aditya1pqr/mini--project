@@ -6,13 +6,15 @@ import Container from './Container'
 import Inputs from './Inputs'
 
 function App() {
-  
+  let foodItmes = ["Salad", "Fruits", "Dal", "Roti", "Sabji"];
+ 
+ 
   return (
-    <Container>
+    <Container >
      <h1 className='heading'>Healthy Food</h1>
-     <Inputs></Inputs>
-     <ErrorMessage></ErrorMessage>
-     <Fooditems></Fooditems>
+     <Inputs ></Inputs>
+     <ErrorMessage foodItmes={foodItmes}></ErrorMessage>
+     <Fooditems foodItmes={foodItmes}></Fooditems>
     </Container>
   )
 }
