@@ -1,14 +1,35 @@
 import React from 'react'
 import Button from './Button'
 
-function DisplayButtons() {
+function DisplayButtons({buttonvalues}) {
+  const buttonNames = [
+    "C",
+    "1",
+    "2",
+    "+",
+    "3",
+    "4",
+    "-",
+    "5",
+    "6",
+    "*",
+    "7",
+    "8",
+    "/",
+    "=",
+    "9",
+    "0",
+    ".",
+  ];
+
+
   return (
     <div className='sub-conatiner'>
-      <Button></Button>
+     
+    {buttonNames.map((item)=> <Button key={item} buttonvalues={buttonvalues} items={item}></Button>)} 
       
-      <Button></Button>
       
-      <Button></Button>
+     
 
 
 
