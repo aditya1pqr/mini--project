@@ -8,22 +8,22 @@ const INITIAL_VALUE = {
 const counterProvider = (store = INITIAL_VALUE, action) =>{
   if(action.type === 'INCREMENT')
   {
-      return {counter : store.counter + 1}
+      return {...store, counter : store.counter + 1}
   }else if(action.type === 'DECREMENT')
   {
-    return {counter : store.counter - 1}
+    return {...store, counter : store.counter - 1}
   }
   else if(action.type === 'add')
     {
-      return {counter : store.counter + Number(action.payload.num)}
+      return {...store, counter : store.counter + Number(action.payload.num)}
     }
  else if(action.type === 'sub')
     {
-        return {counter : store.counter - Number(action.payload.num)}
+        return {...store, counter : store.counter - Number(action.payload.num)}
     }
     else if(action.type === 'privacy')
         {
-            return {privacy: !store.privacy}
+            return {...store, privacy: !store.privacy}
         }
 
     return store;

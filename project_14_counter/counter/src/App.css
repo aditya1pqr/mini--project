@@ -5,3 +5,8 @@
 .number-input {
   max-width: 110px;
 }
+
+.privacy{
+  color: #ff0000;
+  font-weight: 800;
+}

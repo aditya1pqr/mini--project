@@ -2,7 +2,7 @@ import React from 'react'
 
 function PrivacyMessage() {
   return (
-    <p className="lead mb-4">Counter is Private !!! </p>
+    <p className="lead mb-4 privacy">Counter is Private !!! </p>
   )
 }
 
